@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public int hp = 4;
     public float speed = 5;
     public GameObject bullet;
+    public int score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -60,9 +61,28 @@ public class Player : MonoBehaviour
             Vector3 position = transform.position;
             Quaternion rotation = transform.rotation;
 
-            position.y += 0.55f;
+            position.y += 0.7f;
 
-            Instantiate(bullet, position, rotation);
+            GameObject _bullet = Instantiate(bullet, position, rotation);
+            _bullet.GetComponent<Bullet>().threshold = 5;
+            _bullet.GetComponent<Bullet>().tag = "PlayerBullet";
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "EnemyBullet")
+        {
+            hp--;
+
+            FindObjectOfType<Score>().GetComponent<Score>().UpdateText(hp, score);
+
+            if (hp <= 0)
+            {
+                FindObjectOfType<Score>().GetComponent<Score>().GameOver(score);
+                Destroy(FindObjectOfType<Spawner>().gameObject);
+                Destroy(this.gameObject);
+            }
         }
     }
 }
