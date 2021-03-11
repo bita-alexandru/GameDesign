@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 2
-  speed: 2
+  speed: 1.5
   type: 1
   bullet: {fileID: 4828043435827689510, guid: fe6fad7544f009945aa6cba373c6917e, type: 3}
   cooldown: 2

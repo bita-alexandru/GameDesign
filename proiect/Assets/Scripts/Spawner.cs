@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
 
             GameObject _enemy = Instantiate(enemy);
             _enemy.GetComponent<Transform>().position = position;
-            _enemy.GetComponent<SpriteRenderer>().color = color;
+            //_enemy.GetComponent<SpriteRenderer>().color = color;
 
             timer = 0;
         }

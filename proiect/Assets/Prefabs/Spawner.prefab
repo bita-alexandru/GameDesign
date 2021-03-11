@@ -45,4 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 2939759998183855772, guid: 11275db4a28573e42a9632906c7456ab, type: 3}
+  - {fileID: 2939759998183855772, guid: 63a0665e75a6223438944ed2ae32b28c, type: 3}
   cooldown: 3
