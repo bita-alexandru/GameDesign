@@ -1,5 +1,7 @@
 # Game Design - 1st Assignment
 
+An executable prototype can be found here: https://we.tl/t-HuFQUSeRkT
+
 ## Team composition
 
 The members of our team are: Bita Mihai-Alexandru, Nastasa Petru-Alexandru and Radeanu Dragos.
@@ -18,5 +20,3 @@ The winning condition is to defeat the boss at the end, an enemy that will put t
 Chicken Invaders - https://www.interactionstudios.com/chickeninvaders.php
 
 Space Impact - https://moraviagames.com/retro-space-impact/
-
-.
